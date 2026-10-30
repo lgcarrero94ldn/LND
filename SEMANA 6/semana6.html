@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Soporte Técnico</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; padding: 20px; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        textarea { resize: vertical; }
+        .botones { margin-top: 20px; display: flex; gap: 10px; }
+        button { padding: 10px 15px; cursor: pointer; }
+        button[type="submit"] { background-color: #007BFF; color: white; border: none; }
+        button[type="reset"] { background-color: #6C757D; color: white; border: none; }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Formulario de Soporte Técnico</h1>
+    
+    <form action="#" method="POST">
+        
+        <!-- Campo Texto (Nombre) -->
+        <div class="campo">
+            <label id="lbl-nombre" for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" aria-labelledby="lbl-nombre" required>
+        </div>
+
+        <!-- Campo Email -->
+        <div class="campo">
+            <label id="lbl-correo" for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" aria-labelledby="lbl-correo" required>
+        </div>
+
+        <!-- Campo de Selección (Select) -->
+        <div class="campo">
+            <label id="lbl-categoria" for="categoria">Tipo de incidencia:</label>
+            <select id="categoria" name="categoria" aria-labelledby="lbl-categoria" required>
+                <option value="" disabled selected>Selecciona una opción...</option>
+                <option value="hardware">Fallo de Hardware (Pantalla, teclado, ratón...)</option>
+                <option value="software">Problema de Software (Programas, sistema operativo...)</option>
+                <option value="red">Problemas de Red o Internet</option>
+                <option value="accesos">Usuario y Contraseñas</option>
+            </select>
+        </div>
+
+        <!-- Área de texto (Textarea) -->
+        <div class="campo">
+            <label id="lbl-descripcion" for="descripcion">Descripción de la incidencia:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" aria-labelledby="lbl-descripcion" required placeholder="Describe detalladamente qué ocurre..."></textarea>
+        </div>
+
+        <!-- Botones -->
+        <div class="botones">
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Limpiar Formulario</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

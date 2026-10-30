@@ -2,30 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor de Audio HTML Nativo</title>
 </head>
 <body>
 
-    <!-- El atributo 'controls' es el que activa el reproductor visual -->
-    <audio src="https://soundhelix.com" controls>
+   <!-- 2. Audio local simple -->
+    <audio src="prueba.mp3" controls>
         Tu navegador no soporta el elemento de audio.
     </audio>
 
-    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3" controls></audio>
-
-    
-    <audio
-     src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
-     loop
-     controls>
+    <!-- 3. Audio local en bucle infinito -->
+    <audio src="aplausos.mp3" loop controls>
+        Tu navegador no soporta el elemento de audio.
     </audio>
 
-    <video
-    src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-    loop
-    controls
-    muted
-    width="400">
+    <!-- 4. Video local silenciado y en bucle -->
+    <video src="video.mp4" loop controls muted width="400">
+        Tu navegador no soporta el elemento de video.
     </video>
 
 </body>
