@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primera Página Web</title>
+</head>
+<body>
+
+    <!-- 1. TÍTULOS Y PÁRRAFOS -->
+    <!-- h1 es el título principal, van desde h1 hasta h6 según su importancia -->
+    <h1>Bienvenido a mi página web</h1>
+    <h2>Subtítulo de la sección</h2>
+    
+    <!-- La etiqueta <p> sirve para escribir párrafos de texto -->
+    <p>Este es un párrafo de ejemplo. Aquí puedes escribir toda la información que necesites mostrar en tu sitio web.</p>
+
+    
+<main>
+    
+    <!-- 2. IMÁGENES -->
+    <!-- src: ruta o enlace de la imagen | alt: texto alternativo si no carga -->
+    <h3>Ejemplo de Imagen</h3>
+    <img src="https://placeholder.com" alt="Imagen de prueba" width="300">
+
+    <!-- 3. ENLACES (LINKS) -->
+    <!-- href: dirección web a la que lleva el enlace | target="_blank": abre en pestaña nueva -->
+    <h3>Ejemplo de Enlace</h3>
+    <p>Visita <a href="https://google.com" target="_blank">Google</a> para buscar más información.</p>
+</main>
+    <!-- 4. LISTAS ORDENADAS Y DESORDENADAS -->
+    <h3>Lista Desordenada (con viñetas)</h3>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+
+    <h3>Lista Ordenada (numerada)</h3>
+    <ol>
+        <li>Paso uno</li>
+        <li>Paso dos</li>
+        <li>Paso tres</li>
+    </ol>
+
+    <hr>
+
+    <!-- 5. FORMULARIO Y BOTONES -->
+    <h2>Formulario de Contacto</h2>
+    <!-- <form> agrupa todos los campos que el usuario va a llenar -->
+    <form action="#" method="post">
+        
+        
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+
+        <!-- Campo de correo -->
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"><br><br>
+
+        <!-- Área de texto grande -->
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Botones -->
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Borrar todo</button>
+
+    </form>
+
+</body>
+</html>

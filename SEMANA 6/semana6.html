@@ -34,7 +34,17 @@
             <label id="lbl-correo" for="correo">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" aria-labelledby="lbl-correo" required>
         </div>
-
+        <div>    
+        <fieldset>
+          <legend aria-label="atencion-remota">¿Necesita    
+        Atención remota?
+          </legend>
+          <input type="radio" id="remote-yes" name="remote" value="yes">
+          <label for="remote-yes">Sí</label>
+          <input type="radio" id="remote-no" name="remote" value="no">
+          <label for="remote-no">No</label>
+        </fieldset>
+        </div>
         <!-- Campo de Selección (Select) -->
         <div class="campo">
             <label id="lbl-categoria" for="categoria">Tipo de incidencia:</label>
@@ -59,6 +69,7 @@
             <button type="reset">Limpiar Formulario</button>
         </div>
 
+       
     </form>
 
 </body>
